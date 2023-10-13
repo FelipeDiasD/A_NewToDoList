@@ -9,19 +9,28 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
-@Entity(name = "tb_user")
+
+
+@Entity(name = "tb_tasks")
 @Data
-public class UserModel {
+public class TaskModel {
     @Id
     @GeneratedValue(generator = "UUID")
     private UUID id;
 
-    @Column(unique = true)
-    private String username;
+    private UUID userId;
 
-    private String name;
-    private String password;
+    @Column(length = 50)
+    private String title;
+    private String description;
+    private LocalDateTime startedAt;
+    private LocalDateTime endAt;
+
+    private String priority;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
+
+
+
 }
