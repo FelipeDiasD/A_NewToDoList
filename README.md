@@ -1,6 +1,4 @@
-# Service Record app
-
-Uma aplicação para registrar serviços de TI
+# Uma Nova To Do List
 
 
 ## Conteúdo
