@@ -25,7 +25,7 @@ Uma aplicação web service desenvolvida utilizando Java e o framework Springboo
 Para acessar e consumir a aplicação, recomendo utilizar o Postman ou apps similares.
 
 #### Endpoints
-- Criar usuário -> POST - https://todolist-rocketweek.onrender.com/user
+###### Criar usuário -> POST - https://todolist-rocketweek.onrender.com/user
 ```json
 Dados necessários:
 {
@@ -35,7 +35,7 @@ Dados necessários:
 }
 ```
 
-- Criar tarefa -> POST - https://todolist-rocketweek.onrender.com/tasks/
+###### Criar tarefa -> POST - https://todolist-rocketweek.onrender.com/tasks/
 - Para criar uma tarefa é necessário utilizar a autenticação de um usuário existente
 - Username e senha cadastrados
 ```json
@@ -51,23 +51,11 @@ Dados necessários:
 }
 ```
 
-- Pesquisar tarefas -> GET - https://todolist-rocketweek.onrender.com/tasks/
+###### Pesquisar tarefas -> GET - https://todolist-rocketweek.onrender.com/tasks/
 - Para recuperar uma tarefa é necessário utilizar a autenticação de um usuário existente
 - Username e senha cadastrados
-```json
-Dados necessários:
-{
 
-  "description":"Levar o cachorro para passear no parque do centro durante uma hora e meia",
-  "title":"passear",
-  "priority": "Importante",
-  "startAt":"2023-10-30T08:30:00",
-  "endAt":"2023-10-30T11:30:00"
-
-}
-```
-
-- Atualizar tarefas -> PUT - https://todolist-rocketweek.onrender.com/tasks/UUID-da-tarefa
+###### Atualizar tarefas -> PUT - https://todolist-rocketweek.onrender.com/tasks/UUID-da-tarefa
 - Para atualizar uma tarefa é necessário inserir o ID da tarefa desejada e também utilizar a autenticação de um usuário existente
 - Username e senha cadastrados
 ```json
