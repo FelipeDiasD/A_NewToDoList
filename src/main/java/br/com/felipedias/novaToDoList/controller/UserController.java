@@ -33,6 +33,6 @@ public class UserController {
         user.setPassword(passwordHashred);
 
         UserModel returnedObj = userRepository.save(user);
-        return ResponseEntity.ok().body(returnedObj);
+        return ResponseEntity.status(HttpStatus.CREATED).body(returnedObj);
     }
 }
