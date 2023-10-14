@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.felipedias</groupId>
 	<artifactId>novaToDoList</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>novaToDoList</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
